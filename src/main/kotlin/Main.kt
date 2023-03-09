@@ -38,7 +38,7 @@ fun main() {
 //2
 class Bus(make: String,model: String,color: String,capacity: Int): Car(make,model,color,capacity){
     fun maxTripFare(fare: Double): Double{
-        return fare
+        return fare * capacity
     }
 
     override fun calculateParkingFees(hours: Int): Int {
